@@ -1,7 +1,12 @@
 Integrantes: 
+<<<<<<< HEAD
 Karl
 hola
 hhhh
 jj
 
  "Te amo Sofía"
+=======
+
+sergio
+>>>>>>> eb0e5a4ee743110688019acd7e86ce48e02b23fe
