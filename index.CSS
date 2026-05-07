@@ -1,0 +1,129 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at top, #0f1720, #000000 70%);
+    color: rgb(240, 240, 240);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+
+body::before{
+    content: "";
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background-image: 
+        radial-gradient(rgba(0,255,120,0.15) 2px, transparent 2px);
+    background-size: 50px 50px;
+    animation: mover 15s linear infinite;
+    z-index: -1;
+}
+
+header{
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+h1{
+    color: #00ff88;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 
+        0 0 10px #00ff88,
+        0 0 20px #00ff88,
+        0 0 40px #00ff88;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 14px 28px;
+    border: 2px solid #00ff88;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(5px);
+    transition: 
+        transform 0.3s,
+        background 0.3s,
+        box-shadow 0.3s,
+        color 0.3s;
+}
+
+
+nav a:hover{
+    background: #00ff88;
+    color: black;
+    transform: scale(1.12);
+    box-shadow: 
+        0 0 15px #00ff88,
+        0 0 30px #00ff88;
+}
+
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* TARJETAS */
+.card{
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(0,255,136,0.3);
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 30px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0,255,136,0.2);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 
+        0 0 20px rgba(0,255,136,0.5),
+        0 0 40px rgba(0,255,136,0.3);
+}
+
+/* BOTONES */
+button{
+    background: linear-gradient(45deg, #00ff88, #00b35f);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00ff88;
+}
+
+/* TEXTO */
+p{
+    line-height: 1.8;
+    color: #d9d9d9;
+}
