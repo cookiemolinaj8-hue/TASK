@@ -1,6 +1,5 @@
 Integrantes: 
-Karl
-hola
-hhhh
-js
-prueba pr1
+Karol
+Daniela
+Sergio
+Kevin
